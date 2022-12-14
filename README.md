@@ -1,7 +1,7 @@
 # WttrIn-Reutlingen
 A Mastodon bot that sends a weather forecast with wttr.in
 
-[DE](https://github.com/Minecodes/blob/main/README-DE.md)
+[DE](https://github.com/Minecodes/WttrIn-Reutlingen/blob/main/README-DE.md)
 
 ---------------------------------
 
