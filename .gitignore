@@ -13,3 +13,10 @@
 
 # Dependency directories (remove the comment below to include it)
 # vendor/
+
+# Files for VS Code that are not needed
+.dccache
+config.json
+
+# Files from tests
+weather.png
