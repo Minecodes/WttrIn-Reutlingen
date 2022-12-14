@@ -16,7 +16,7 @@
 
 # Files for VS Code that are not needed
 .dccache
-config.json
 
 # Files from tests
+config.json
 weather.png
