@@ -20,3 +20,4 @@
 # Files from tests
 config.json
 weather.png
+build/
