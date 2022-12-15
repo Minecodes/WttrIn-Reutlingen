@@ -60,8 +60,9 @@ func main() {
 		MediaIDs: []mastodon.ID{
 			image.ID,
 		},
-		Language: "de",
-		Status:   "Hier ist das heutige Wetter von " + config.City + ". Ich wünsche euch einen schönen " + getWeekDay() + "!",
+		Language:   "de",
+		Visibility: "unlisted",
+		Status:     "Hier ist das heutige Wetter von " + config.City + ". Ich wünsche euch einen schönen " + getWeekDay() + "!",
 	})
 	if err != nil {
 		panic(err)
