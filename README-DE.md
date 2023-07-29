@@ -1,8 +1,9 @@
 # WttrIn-Reutlingen
-Ein Mastodon Bot, der die Wettervohersage mithilfe von wttr.in sendet.
+Ein Mastodon/Misskey Bot, der die Wettervohersage mithilfe von wttr.in sendet.
 
 ---------------------------------
 
+**Mastodon**
 Um den Bot zu konfigurieren, erstelle einfach eine `config.json` Datei und fülle sie mit den in der Beispiels Config gezeigten Werten aus.<br/>
 Wenn du die Sprache des Bots ändern möchtest, änder einfach die Werte in der `main.go` Datei.<br/>
 Wenn der Bot jeden Tag laufen soll, erstelle eine Cron Datei und kompiliere den Bot zu einer ausführbaren Datei.
@@ -10,6 +11,11 @@ Wenn der Bot jeden Tag laufen soll, erstelle eine Cron Datei und kompiliere den 
 Kompilieren:
 ```bash
 go build main.go
+```
+
+**Misskey**
+```bash
+python3 main.py instance_url token
 ```
 
 ---------------------------------
