@@ -25,3 +25,4 @@ python3 main.py instance_url token
 Licenses:
 - [wttr.in](https://github.com/chubin/wttr.in) - Apache 2.0
 - [go-mastodon](https://github.com/mattn/go-mastodon) - MIT
+- [requests](https://github.com/psf/requests) - Apache 2.0
