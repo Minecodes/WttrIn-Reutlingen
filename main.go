@@ -170,12 +170,20 @@ func getWeatherData(city string) {
 	if err != nil {
 		panic(err)
 	}
+	// retry every 30 seconds if the request fails
 	c := http.Client{}
-	res, err := c.Get("https://wttr.in/" + city + ".png?1&lang=de")
-	if err != nil {
-		panic(err)
+	var res *http.Response
+	retry := true
+	for retry {
+		res, err = c.Get("https://wttr.in/" + city + ".png?1&lang=de")
+		if err != nil {
+			fmt.Println(err)
+		} else {
+			retry = false
+		}
+		defer res.Body.Close()
+		time.Sleep(30 * time.Second)
 	}
-	defer res.Body.Close()
 	io.Copy(image, res.Body)
 	defer image.Close()
 }
