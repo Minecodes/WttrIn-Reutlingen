@@ -1,15 +1,7 @@
 {
-    "mastodon": {
-        "enable": false,
-        "instance": "https://botsin.space",
-        "client_id": "Client ID",
-        "client_secret": "Client Secret",
-        "access_token": "Access Token"
-    },
-    "misskey": {
-        "enable": false,
-        "instance": "social.minecodes.de",
-        "token": "Bot Token"
-    },
+    "instance": "https://your.mastodon.instance",
+    "client_id": "YourClientID",
+    "client_secret": "YourClientSecret",
+    "access_token": "YourAccessToken",
     "city": "Reutlingen"
 }
