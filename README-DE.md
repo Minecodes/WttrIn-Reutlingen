@@ -39,4 +39,3 @@ Ausführen (Windows/Powershell):
 ## Lizensen
 - [wttr.in](https://github.com/chubin/wttr.in) - Apache 2.0
 - [go-mastodon](https://github.com/mattn/go-mastodon) - MIT
-- [go-misskey](https://github.com/mattn/go-misskey) - GPL-3.0
