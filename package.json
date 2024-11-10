@@ -12,6 +12,9 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
-    "cron": "^3.1.9"
+    "@skyware/bot": "^0.3.7",
+    "axios": "^1.7.7",
+    "cron": "^3.1.9",
+    "dotenv": "^16.4.5"
   }
 }
