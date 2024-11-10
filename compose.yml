@@ -1,0 +1,7 @@
+services:
+  bot:
+    build: .
+    environment:
+     - BSKY_USERNAME=username.bsky.network
+     - BSKY_PASSWORD=password
+     - BOT_CITY=Reutlingen

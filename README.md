@@ -1,43 +1,46 @@
 # WttrIn-Reutlingen
-A Mastodon bot that sends a weather forecast with wttr.in
-
-[DE](https://git.minecodes.de/thies/WttrIn-Reutlingen/src/branch/main/README-DE.md)
+A Bluesky bot that posts the weather forecast of Reutlingen at 7:00 am every day.
 
 ---------------------------------
 
 ## Requirements
-- [Go](https://golang.org/)
-- A Mastodon account (with an application)
-
-## Application permissions
-- read:accounts
-- write:media (isn't used at the moment because wttr.in disabled the png support)
-- write:statuses
+- [bun](https://bun.sh)
+- [NodeJS](https://nodejs.org)
+- A Bluesky account (please create a new account for the bot)
 
 ---------------------------------
 
 ## Installation
-To configure the bot, just rename the `config.example.json` file to `config.json` and fill out the values with the values of your mastodon application (Settings -> Development -> New application) and start it.<br/>
-If you want to change the language of the bot, just change the values in the `main.go` file.<br/>
-If the bot should run everyday, then you can do it with a cron file, and by compiling the bot to an executable.
-
-Compile:
+1. Clone this repository
+2. Install the dependencies
 ```bash
-go build main.go
+bun install
 ```
-
-Run (Linux/MacOS):
+3. Create a new Bluesky account and a app password
+4. Create a new file called `.env` and add the following content:
+```env
+BSKY_USERNAME=username.bsky.network
+BSKY_PASSWORD=password
+BOT_CITY=Your_City
+```
+5. Replace `username.bsky.network` with your Bluesky username, `password` with your Bluesky app password and `Your_City` with your city (e.g. Reutlingen)
+6. Run the bot
 ```bash
-./main
+bun start
+```
+or use
+```bash
+docker compose up -d
 ```
 
-Run (Windows/Powershell):
-```powershell
-.\main.exe
-```
+## Change the language
+To change the language of the weather forecast, you can change the `lang` parameter in the `main.ts` file. The default language is `en`. Also, you have to manually change the text in the line 28 of this file.
 
----------------------------------
+----------------------------------------------------------------
 
-## Licenses
-- [wttr.in](https://github.com/chubin/wttr.in) - Apache 2.0
-- [go-mastodon](https://github.com/mattn/go-mastodon) - MIT
+## License
+ - This project is licensed under the BSD 3-Clause License - see the LICENSE file for details
+ - [wttr.in](https://github.com/chubin/wttr.in/blob/master/LICENSE) is licensed under the Apache License 2.0
+ - [dotenv](https://github.com/motdotla/dotenv/blob/master/LICENSE) is licensed under the BSD 2-Clause License
+ - [node-cron](https://github.com/kelektiv/node-cron/blob/main/LICENSE) is licensed under the MIT License
+ - [@skyware/bot](https://github.com/skyware-js/bot/blob/main/LICENSE) is licensed under the Mozilla Public License 2.0
