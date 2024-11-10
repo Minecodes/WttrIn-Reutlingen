@@ -1,0 +1,17 @@
+{
+  "name": "wttrin-reutlingen",
+  "module": "main.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run main.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "cron": "^3.1.9"
+  }
+}

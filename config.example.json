@@ -1,7 +1,0 @@
-{
-    "instance": "https://your.mastodon.instance",
-    "client_id": "YourClientID",
-    "client_secret": "YourClientSecret",
-    "access_token": "YourAccessToken",
-    "city": "Reutlingen"
-}

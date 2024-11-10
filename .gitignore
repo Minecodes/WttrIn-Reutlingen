@@ -24,3 +24,5 @@ weather.png
 build/
 
 snyk-linux
+node_modules/
+.env
