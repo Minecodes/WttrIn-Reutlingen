@@ -26,3 +26,4 @@ build/
 snyk-linux
 node_modules/
 .env
+main.go.bak
