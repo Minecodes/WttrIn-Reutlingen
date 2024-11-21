@@ -37,6 +37,7 @@ async function main() {
  */
 //const scheduleExpressionMinute = "* * * * *";
 const scheduleExpression = "0 7 * * *";
+// const scheduleExpression = "0 6 * * *";
 
 const job = new CronJob(scheduleExpression, main); // change to scheduleExpressionMinute for testing
 
